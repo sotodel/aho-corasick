@@ -6,7 +6,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>String Matching Algorithms</name>
 	<build>
-		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -20,16 +19,9 @@
 	</build>
 	<properties>
 		<junit.version>4.11</junit.version>
-		<guava.version>16.0.1</guava.version>
 		<hamcrest.version>1.3</hamcrest.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-			<version>${guava.version}</version>
-		</dependency>
-
 		<!-- Tests -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -44,4 +36,11 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<description>A collection of string matching algorithms. Currently contains Aho-Corasick.</description>
+	<scm>
+		<url>https://github.com/sotodel/aho-corasick.git</url>
+		<connection>scm:git:ssh://github.com/sotodel/aho-corasick.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/sotodel/aho-corasick.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
 </project>
